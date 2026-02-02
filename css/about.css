@@ -1,0 +1,131 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(120deg, #667eea, #764ba2),
+    url("../images/computer.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity:0.5;
+}
+.buttons {
+  margin:20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content:center;
+  position: sticky;
+  top:0;
+  }
+.buttons a,
+.back {
+  padding: 14px 36px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: linear-gradient(to right,purple, #dd2476);
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 25px rgba(221, 36, 118, 0.4);
+}
+
+.buttons a:hover,
+.back:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(238, 36, 211, 0.6);
+}
+  .slide-up h1 {
+    text-align: center;
+    color: purple; 
+    margin-bottom: 20px;
+  }
+  .slide-up p {
+  display: block;        /* MUST */
+  max-width: 1000px;
+  margin: 20px auto;
+  font-size: 25px;
+  line-height: 1.6;
+  color: black;
+  text-indent: 30px;     /* 👈 first line indent for ALL paragraphs */
+}
+
+
+  .slide-up p {
+    display: block;
+    max-width: 1000px;       /* Control paragraph width */
+    margin: 20px auto;      /* Space between paragraphs + center align */     /* Indent first line */
+    line-height: 1.6;       /* More readable spacing between lines */
+    font-size: 25px;        /* Adjust font size */
+    color:black;      /* Text color */
+    margin-top: 20px;   /* space above paragraph */
+    margin-bottom: 20px; /* space below paragraph */
+    line-height: 1.6;   /* improve readability */
+    text-indent: 35px;  /*first line start*/
+  }
+
+  /* Optional: smaller spacing for technical skills */
+  .slide-up h1 + p {
+    margin-top: 30px; /* space between heading and first paragraph */
+  }
+  .slide-up {
+  animation: slide 1.5s ease;
+}
+@keyframes slide {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+  .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 4 per row */
+            gap: 18px;
+            margin-top: 30px;
+            color:white;
+        }
+
+        .skill-box {
+            height: 70px;  /* SAME HEIGHT */
+            width:30vw;            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background:rgb(31, 30, 31);
+            backdrop-filter: blur(6px);
+            transition: 0.3s ease;
+        }
+
+        .skill-box span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-8px) scale(1.05);
+            background: linear-gradient(135deg, #c10ce6, #7b3291);
+            box-shadow: 0 10px 25px rgba(230, 50, 215, 0.4);
+        }
+
+        .skills1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 4 per row */
+            gap: 18px;
+            margin-top: 30px;
+            color:white;
+        }
+       
+footer {
+            position: static;
+            bottom: 15px;
+            font-size: 13px;
+            opacity: 0.6;
+        }
